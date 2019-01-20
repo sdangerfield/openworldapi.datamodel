@@ -10,26 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171106171940) do
-
-  create_table "ow_base_types", force: :cascade do |t|
-    t.string "name", limit: 30
-    t.string "code", limit: 5
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "ow_users", force: :cascade do |t|
-    t.string "firstname"
-    t.string "surname"
-    t.string "nickname"
-    t.string "fbID"
-    t.string "fbToken"
-    t.string "fbTokenExpires"
-    t.integer "owUserType_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["owUserType_id"], name: "index_ow_users_on_owUserType_id"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
